@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import './Admin.css';
 
-const API_URL = "http://10.1.184.28:8000/api";
+const API_URL = "https://ecommerce-backend-1-8fi4.onrender.com/api";
 
 const AdminProductForm = () => {
   const { id } = useParams();
@@ -31,7 +31,7 @@ const AdminProductForm = () => {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get(`${API_URL}/categories/`);
+      const response = await axios.get(`${API_URL}/categories/ || /admin/`);
       setCategories(response.data);
     } catch (error) {
       console.error('Error fetching categories:', error);

@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import './Admin.css';
 
-const API_URL = "http://10.1.184.28:8000/api";
+const API_URL = "https://ecommerce-backend-1-8fi4.onrender.com/api";
 
 const AdminCategoryForm = () => {
   const { id } = useParams();
@@ -80,11 +80,10 @@ const AdminCategoryForm = () => {
 
         // Delete removed images
         const currentImageIds = existingImages.map(img => img.id);
-        // You would need to implement image deletion endpoint if needed
 
         alert('Category updated successfully!');
       } else {
-        // Create category
+        
         await axios.post(`${API_URL}/categories/`, data, {
           headers: { 'Content-Type': 'multipart/form-data' }
         });

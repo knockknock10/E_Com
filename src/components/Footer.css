@@ -1,6 +1,4 @@
-/* ========================
-   FOOTER BASE
-======================== */
+/* FOOTER BASE */
 
 .footer {
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
@@ -28,9 +26,9 @@
   z-index: 1;
 }
 
-/* ========================
+/* 
    FOOTER CONTENT GRID
-======================== */
+ */
 
 .footer-content {
   display: grid;
@@ -39,9 +37,9 @@
   margin-bottom: 3rem;
 }
 
-/* ========================
+/*
    FOOTER ABOUT SECTION
-======================== */
+ */
 
 .footer-about {
   max-width: 350px;
@@ -78,9 +76,9 @@
   font-size: 0.95rem;
 }
 
-/* ========================
+/* 
    SOCIAL LINKS
-======================== */
+ */
 
 .social-links {
   display: flex;
@@ -107,9 +105,9 @@
   transform: translateY(-3px);
 }
 
-/* ========================
+/* 
    FOOTER SECTIONS
-======================== */
+ */
 
 .footer-section h3 {
   margin-bottom: 1.25rem;
@@ -131,9 +129,7 @@
   border-radius: 2px;
 }
 
-/* ========================
-   FOOTER LINKS
-======================== */
+/* FOOTER LINKS */
 
 .footer-links {
   list-style: none;
@@ -191,9 +187,9 @@
   transform: translateY(-2px);
 }
 
-/* ========================
+/*
    CONTACT INFO
-======================== */
+ */
 
 .contact-info {
   margin-bottom: 1.5rem;
@@ -223,9 +219,8 @@
   color: #c084fc;
 }
 
-/* ========================
-   NEWSLETTER
-======================== */
+/* 
+   Newsletter */
 
 .newsletter-text {
   font-size: 0.9rem;
@@ -314,9 +309,9 @@
   to { transform: rotate(360deg); }
 }
 
-/* ========================
+/* 
    MESSAGE
-======================== */
+ */
 
 .message {
   margin-top: 0.75rem;
@@ -350,9 +345,9 @@
   border: 1px solid rgba(239, 68, 68, 0.2);
 }
 
-/* ========================
+/* 
    FOOTER BOTTOM
-======================== */
+ */
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -394,9 +389,9 @@
   color: #334155;
 }
 
-/* ========================
+/*
    RESPONSIVE
-======================== */
+ */
 
 @media (max-width: 1024px) {
   .footer-content {

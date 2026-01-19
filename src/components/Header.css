@@ -691,7 +691,7 @@
   }
 }
 
-/* ==================== DESKTOP STYLES (969px+) ==================== */
+
 @media (min-width: 969px) {
   .header-container {
     padding: 1rem 2rem;
@@ -799,7 +799,7 @@
   }
 }
 
-/* ==================== LARGE DESKTOP (1280px+) ==================== */
+
 @media (min-width: 1280px) {
   .header-container {
     padding: 1rem 2.5rem;
@@ -810,7 +810,7 @@
   }
 }
 
-/* ==================== TOUCH DEVICE OPTIMIZATIONS ==================== */
+
 @media (hover: none) and (pointer: coarse) {
   .nav-list a,
   .dropdown-item,

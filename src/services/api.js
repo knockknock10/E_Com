@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://10.1.184.28:8000/doc/'; 
+const API_BASE_URL = 'https://ecommerce-backend-1-8fi4.onrender.com/api'; 
 
 const api = axios.create({
   baseURL: API_BASE_URL,

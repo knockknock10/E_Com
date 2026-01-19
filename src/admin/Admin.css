@@ -1,6 +1,4 @@
-/* ========================
-   ADMIN CONTAINER
-======================== */
+/* ADMIN CONTAINER*/
 
 .admin-container {
   min-height: 100vh;
@@ -8,9 +6,7 @@
   padding: 2rem;
 }
 
-/* ========================
-   ADMIN HEADER
-======================== */
+/* ADMIN HEADER*/
 
 .admin-header {
   display: flex;
@@ -36,9 +32,7 @@
   margin: 0;
 }
 
-/* ========================
-   BUTTONS
-======================== */
+/* BUTTONS*/
 
 .btn-admin-primary,
 .btn-admin-secondary,
@@ -92,9 +86,7 @@
   box-shadow: 0 12px 30px rgba(220, 38, 38, 0.3);
 }
 
-/* ========================
-   TOOLBAR
-======================== */
+/* TOOLBAR*/
 
 .admin-toolbar {
   display: flex;
@@ -176,9 +168,7 @@
   font-weight: 700;
 }
 
-/* ========================
-   TABLE
-======================== */
+/* TABLE*/
 
 .admin-table-container {
   background: #ffffff;
@@ -305,9 +295,7 @@
   color: white;
 }
 
-/* ========================
-   PRODUCT GRID
-======================== */
+/* product grid */
 
 .admin-grid {
   display: grid;
@@ -408,10 +396,7 @@
   gap: 0.5rem;
   padding: 0 1.5rem 1.5rem;
 }
-
-/* ========================
-   FORMS
-======================== */
+/* forms */
 
 .admin-form-container {
   max-width: 900px;
@@ -632,9 +617,6 @@
   padding-top: 1.5rem;
 }
 
-/* ========================
-   MODAL
-======================== */
 
 .modal-overlay {
   position: fixed;
@@ -818,9 +800,7 @@
   font-weight: 600;
 }
 
-/* ========================
-   RESPONSIVE
-======================== */
+
 
 @media (max-width: 768px) {
   .admin-container {

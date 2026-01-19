@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import Carousel from "../components/Carousel";
 import "../components/Carousel.css";
-const API_URL = "http://10.1.184.28:8000/api";
+const API_URL = "https://ecommerce-backend-1-8fi4.onrender.com/api";
 
 const Home = () => {
   const [categories, setCategories] = useState([]);
