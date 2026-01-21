@@ -36,6 +36,11 @@ function App() {
           <Route path="/product/:productId" element={<ProductDetail />} />
 
           {/* ---------- Admin Routes ---------- */}
+          
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/admin/carousel" element={<AdminCarousel />} />
+          <Route path="/admin/carousel/add" element={<AdminCarouselForm />} />
+          <Route path="/admin/carousel/edit/:id" element={<AdminCarouselForm />} />
           {/* Redirect /admin → /admin/categories */}
           <Route path="/admin" element={<Navigate to="/admin/categories" replace />} />
 
