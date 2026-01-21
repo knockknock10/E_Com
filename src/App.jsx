@@ -12,6 +12,9 @@ import Technology from './pages/Technology.jsx';
 import Contact from './pages/Contact.jsx';
 
 // Admin pages
+import AdminCarousel from "./admin/AdminCarousel.jsx";
+import AdminCarouselForm from "./admin/AdminCarouselForm.jsx";
+import AdminDashboard from "./admin/AdminDashboard.jsx";
 import AdminCategories from "./admin/AdminCategories.jsx";
 import AdminCategoryForm from "./admin/AdminCategoryForm.jsx";
 import AdminProducts from "./admin/AdminProduct.jsx";
