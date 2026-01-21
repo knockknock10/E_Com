@@ -31,7 +31,7 @@ const AdminProductForm = () => {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get(`${API_URL}/categories/ || /admin/`);
+      const response = await axios.get(`${API_URL}/categories/`);
       setCategories(response.data);
     } catch (error) {
       console.error('Error fetching categories:', error);
