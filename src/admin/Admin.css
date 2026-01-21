@@ -844,3 +844,193 @@
     width: 100%;
   }
 }
+
+
+/* Add these styles to your Admin.css file */
+
+/* DASHBOARD GRID */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.dashboard-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  border: 2px solid #e2e8f0;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+  border-color: #cbd5e1;
+}
+
+.dashboard-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.dashboard-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.05);
+  border-radius: 12px;
+}
+
+.dashboard-stats h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1;
+}
+
+.dashboard-stats p {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #64748b;
+  margin: 0.5rem 0 0;
+}
+
+.dashboard-card-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.dashboard-btn-view,
+.dashboard-btn-add {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.25rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.dashboard-btn-view {
+  background: #f8fafc;
+  color: #0f172a;
+  border: 2px solid #e2e8f0;
+}
+
+.dashboard-btn-view:hover {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-btn-add {
+  background: #0f172a;
+  color: white;
+  border: 2px solid #0f172a;
+}
+
+.dashboard-btn-add:hover {
+  background: #1e293b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.3);
+}
+
+/* QUICK ACTIONS */
+.dashboard-quick-actions {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  border: 2px solid #e2e8f0;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-quick-actions h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 1.5rem;
+}
+
+.quick-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.quick-action-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.quick-action-card:hover {
+  background: #ffffff;
+  border-color: #0f172a;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.quick-action-card svg {
+  color: #64748b;
+  transition: all 0.3s ease;
+}
+
+.quick-action-card:hover svg {
+  color: #0f172a;
+  transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .dashboard-card-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dashboard-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .dashboard-stats h2 {
+    font-size: 2.5rem;
+  }
+
+  .dashboard-card-actions {
+    flex-direction: column;
+  }
+
+  .quick-actions-grid {
+    grid-template-columns: 1fr;
+  }
+}
