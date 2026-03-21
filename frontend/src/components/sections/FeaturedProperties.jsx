@@ -1,9 +1,7 @@
 import { motion } from 'framer-motion';
 import { mockProperties } from '../../data/properties';
-
 const FeaturedProperties = () => {
-  return (
-    <section id="properties" className="py-24 lg:py-32 px-6 bg-primary">
+  return <section id="properties" className="py-24 lg:py-32 px-6 bg-primary">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 lg:mb-20 gap-6">
           <div className="max-w-2xl">
@@ -20,22 +18,21 @@ const FeaturedProperties = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-          {mockProperties.slice(0, 6).map((property, idx) => (
-            <motion.div 
-              key={property.id}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ delay: idx * 0.1, duration: 0.6 }}
-              className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col h-full border border-black/5"
-            >
+          {mockProperties.slice(0, 6).map((property, idx) => <motion.div key={property.id} initial={{
+          opacity: 0,
+          y: 40
+        }} whileInView={{
+          opacity: 1,
+          y: 0
+        }} viewport={{
+          once: true,
+          margin: "-100px"
+        }} transition={{
+          delay: idx * 0.1,
+          duration: 0.6
+        }} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col h-full border border-black/5">
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-secondary/10">
-                <img 
-                  src={property.imageUrl} 
-                  alt={property.title} 
-                  loading="lazy"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)]"
-                />
+                <img src={property.imageUrl} alt={property.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)]" />
                 <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold text-dark shadow-md uppercase tracking-wide">
                   {property.location}
                 </div>
@@ -67,12 +64,9 @@ const FeaturedProperties = () => {
                   </button>
                 </div>
               </div>
-            </motion.div>
-          ))}
+            </motion.div>)}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default FeaturedProperties;

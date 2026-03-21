@@ -1,24 +1,22 @@
 import { motion } from 'framer-motion';
-
 const About = () => {
-  return (
-    <section id="about" className="py-24 lg:py-32 px-6 bg-primary">
+  return <section id="about" className="py-24 lg:py-32 px-6 bg-primary">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
         
-        <motion.div 
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8 }}
-          className="w-full lg:w-1/2"
-        >
+        <motion.div initial={{
+        opacity: 0,
+        x: -30
+      }} whileInView={{
+        opacity: 1,
+        x: 0
+      }} viewport={{
+        once: true,
+        margin: "-100px"
+      }} transition={{
+        duration: 0.8
+      }} className="w-full lg:w-1/2">
           <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-2xl shadow-black/10 border border-black/5 group">
-            <img 
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-              alt="NovaNest Architect" 
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-              loading="lazy"
-            />
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="NovaNest Architect" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-dark/60 to-transparent" />
             <div className="absolute bottom-8 left-8 text-white">
               <p className="text-4xl font-bold tracking-tight mb-1">15+ Years</p>
@@ -27,13 +25,17 @@ const About = () => {
           </div>
         </motion.div>
 
-        <motion.div 
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left"
-        >
+        <motion.div initial={{
+        opacity: 0,
+        x: 30
+      }} whileInView={{
+        opacity: 1,
+        x: 0
+      }} viewport={{
+        once: true
+      }} transition={{
+        duration: 0.8
+      }} className="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left">
           <h2 className="text-4xl md:text-5xl font-extrabold text-dark tracking-tight mb-6 leading-tight">
             Pioneering the Future of Luxury Living.
           </h2>
@@ -58,8 +60,6 @@ const About = () => {
         </motion.div>
 
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;

@@ -1,6 +1,5 @@
 const Footer = () => {
-  return (
-    <footer className="bg-dark pt-20 pb-10 px-6">
+  return <footer className="bg-dark pt-20 pb-10 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 border-b border-white/10 pb-16 mb-10">
         <div className="max-w-sm">
           <div className="flex items-center gap-2 mb-6">
@@ -52,8 +51,6 @@ const Footer = () => {
           <a href="#" className="hover:text-white transition-colors">Cookie Settings</a>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
